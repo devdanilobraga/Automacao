@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <button onclick="voltarParaIndex()">Voltar</button>
+    <h1>Bem-vindo, <span id="username"></span>!</h1>
+    <div class="choices-container">
+        <h2>Suas escolhas:</h2>
+        <ul>
+            <li><strong>Rede Social:</strong> <span id="rede-social"></span></li>
+            <li><strong>Login:</strong> <span id="login"></span></li>
+            <li><strong>Link da postagem:</strong> <span id="link"></span></li>
+            <li><strong>Mensagem:</strong> <span id="mensagem"></span></li>
+            <li><strong>Palavra-chave:</strong> <span id="palavra-chave"></span></li>
+        </ul>
+    </div>
+    <div class="circle">
+        <p>Total de Comentários: <span id="total-comments"></span></p>
+    </div>
+    <div class="circle">
+        <p>Comentários com a Palavra-chave: <span id="keyword-comments"></span></p>
+    </div>
+    <h2>Usuários que receberam comentários:</h2>
+    <table id="users-table">
+        <tr>
+            <th>@</th>
+        </tr>
+    </table>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>
